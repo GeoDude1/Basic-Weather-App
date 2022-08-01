@@ -12,12 +12,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="card">
       <div class="search">
-        <input type="text" class="search-bar" />
+        <input type="text" class="search-bar" placeholder="Search" />
         <button>
           <svg
             stroke="currentColor"
@@ -35,10 +35,16 @@
         </button>
       </div>
       <div class="weather">
-        <h2 class="city">Weather in Denver</h2>
-        <div class="temp">51°C</div>
-        <img src="" alt="" class="icon" />
-        <div class="description">Cloudy</div>
+        <h2 class="city">Weather in California</h2>
+        <h1 class="temp">71°C</h1>
+        <div class="flex">
+          <img
+            src="https://openweathermap.org/img/wn/04d.png"
+            alt=""
+            class="icon"
+          />
+          <div class="description">Sunny</div>
+        </div>
         <div class="humidity">Humidity: 60%</div>
         <div class="wind">Wind Speed: 6.2 km/h</div>
       </div>
